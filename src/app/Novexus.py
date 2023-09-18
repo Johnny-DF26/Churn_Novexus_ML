@@ -3,6 +3,14 @@ import numpy as np
 import streamlit as st
 import requests
 import pickle
+import os
+
+
+# Caminho absoluto para a imagem
+image_path = os.path.abspath("data/interim/images/Logo (5).png")
+
+# Exibir a imagem
+st.image(image_path)
 
 # image_head = "data/interim/images/Logo (5).png"
 st.image("data/interim/images/Logo (5).png")
@@ -14,6 +22,8 @@ with open(model_dir, 'rb') as f:
 
 with open(scaler_dir, 'rb') as f:
     scaler = pickle.load(f)
+
+
 
 # Configurando o layout para centralizar conteúdo
 st.write("""
