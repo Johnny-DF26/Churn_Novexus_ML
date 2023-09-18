@@ -10,7 +10,7 @@ import os
 image_path = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/data/interim/images/Logo (5).png"
 
 # Exibir a imagem
-st.image(image_path, format='PNG')
+st.image(image=image_path, format='PNG')
 
 # image_head = "data/interim/images/Logo (5).png"
 # st.image("data/interim/images/Logo (5).png")
