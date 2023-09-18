@@ -17,7 +17,6 @@ with open(scaler_dir, 'rb') as f:
 
 # Título com emoji
 st.title( "📞Previsão de Churn📞")
-import streamlit as st
 
 # Configurando o layout para centralizar conteúdo
 st.write("""
