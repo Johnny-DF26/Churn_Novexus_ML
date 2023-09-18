@@ -6,12 +6,12 @@ import pickle
 
 # st.image("C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/data/interim/images/Logo (5).png", use_column_width=True) 
 model_dir = '../../models/model_random_forest_novexus_churn.pkl'
-scaler_dir = "../../models/scaler_random_forest_novexus_churn.pkl"
+scaler_dir = '../../models/scaler_random_forest_novexus_churn.pkl'
 
-with open(model_dir, 'r') as f:
+with open(model_dir, 'rb') as f:
     model = pickle.load(f)
 
-with open(scaler_dir, 'r') as f:
+with open(scaler_dir, 'rb') as f:
     scaler = pickle.load(f)
 
 # Título com emoji
