@@ -7,7 +7,7 @@ import os
 
 
 # Caminho absoluto para a imagem
-image_path = os.path.abspath("data/interim/images/Logo (5).png")
+image_path = "https://github.com/Johnny-DF26/Churn_Novexus_ML/blob/main/data/interim/images/Logo%20(5).png"
 
 # Exibir a imagem
 st.image(image_path)
