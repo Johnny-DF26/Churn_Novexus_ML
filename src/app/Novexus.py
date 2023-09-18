@@ -17,6 +17,16 @@ with open(scaler_dir, 'rb') as f:
 
 # Título com emoji
 st.title( "📞Previsão de Churn📞")
+import streamlit as st
+
+# Configurando o layout para centralizar conteúdo
+st.write("""
+    <div style="display: flex; justify-content: center;">
+        <h1>Seu Título no Centro da Página</h1>
+    </div>
+""", unsafe_allow_html=True)
+
+# Aqui você pode adicionar o restante do seu conteúdo
 
 
 with st.form("my_form"):
