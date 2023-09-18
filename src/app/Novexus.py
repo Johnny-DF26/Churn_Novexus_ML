@@ -4,7 +4,7 @@ import streamlit as st
 import requests
 import pickle
 
-st.image("data/interim/images/Logo (5).png", use_column_width=True) 
+st.image("data/interim/images/Logo (5).png") 
 model_dir = 'models/model_random_forest_novexus_churn.pkl'
 scaler_dir = 'models/scaler_random_forest_novexus_churn.pkl'
 
