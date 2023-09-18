@@ -4,11 +4,9 @@ import streamlit as st
 import requests
 import pickle
 
-# st.image("./venv/images/PNG/Logo (5).png", use_column_width=True)  # Substitua "caminho_para_o_logo.png" pelo caminho real da sua imagem PNG
-
-model_dir = "../../models/model_random_forest_novexus_churn.pkl"
-scaler_dir = "../../models/scaler_random_forest_novexus_churn.pkl"
-modelo2 = ''
+st.image("../../data/interim/images/Logo (5).png", use_column_width=True) 
+model_dir = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/models/model_random_forest_novexus_churn.pkl"
+scaler_dir = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/models/scaler_random_forest_novexus_churn.pkl"
 
 with open(model_dir, 'rb') as f:
     model = pickle.load(f)
