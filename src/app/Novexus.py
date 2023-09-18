@@ -10,7 +10,7 @@ import os
 image_path = "../../data/interim/images/Logo (3).png"
 
 # Exibir a imagem
-st.image(image=image_path, format='PNG')
+st.image(image=image_path)
 
 # image_head = "data/interim/images/Logo (5).png"
 # st.image("data/interim/images/Logo (5).png")
