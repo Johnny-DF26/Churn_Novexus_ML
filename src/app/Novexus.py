@@ -15,21 +15,16 @@ with open(model_dir, 'rb') as f:
 with open(scaler_dir, 'rb') as f:
     scaler = pickle.load(f)
 
-# Título com emoji
-# st.title( "📞Previsão de Churn📞")
-
 # Configurando o layout para centralizar conteúdo
-st.write("""
+st.title("""
     <div style="display: flex; justify-content: center;">
         <h1>📞Previsão de Churn📞</h1>
     </div>
 """, unsafe_allow_html=True)
 
-# Aqui você pode adicionar o restante do seu conteúdo
-
 
 with st.form("my_form"):
-# Adicione widgets para os campos de entrada
+# Widgets para os campos de entrada
     contrato_ativo = int(st.number_input("Contrato Ativo (em meses): ", min_value=0))
     valor_mensal = st.number_input("Valor Mensal: ", min_value=0.0)
     valor_total = st.number_input("Valor Total: ", min_value=0.0)
@@ -52,7 +47,7 @@ with st.form("my_form"):
                             ['Fatura Online', 'Boleto', 'Eletronico', 'Transferência Automatica'], horizontal=True)
 
 
-    # Atribua 1 ou 0 com base na escolha do contrato
+    # Atribuindo 1 ou 0 com base na escolha do contrato
     if contrato == "Contrato de Dois Anos":
         Contrato_Dois = 1
         Contrato_Mensal = 0
@@ -88,7 +83,7 @@ with st.form("my_form"):
     # Botão para fazer a previsão
     submitted = st.form_submit_button("Obter Previsão")
     if  submitted:
-        # Processar os valores dos campos de entrada (você pode mapear "Sim" para 1 e "Não" para 0)
+        # Processando os valores dos campos de entrada (você pode mapear "Sim" para 1 e "Não" para 0)
         idoso_encoded = 1 if idoso == "Sim" else 0
         conjuge_encoded = 1 if conjuge == "Sim" else 0
         dependentes_encoded = 1 if dependentes == "Sim" else 0
@@ -116,7 +111,7 @@ with st.form("my_form"):
         input_scaled = scaler.transform(input_data, )
         prediction = model.predict(input_data)
 
-        # Exibir o resultado da previsão
+        # Exibindo o resultado da previsão
         if prediction == 0:
             result = "Cliente provavelmente NÃO vai cancelar o serviço."
         else:
