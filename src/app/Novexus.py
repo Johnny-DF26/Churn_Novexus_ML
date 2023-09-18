@@ -8,10 +8,10 @@ import pickle
 model_dir = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/models/model_random_forest_novexus_churn.pkl"
 scaler_dir = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/models/scaler_random_forest_novexus_churn.pkl"
 
-with open(model_dir, 'rb') as f:
+with open(model_dir, 'r') as f:
     model = pickle.load(f)
 
-with open(scaler_dir, 'rb') as f:
+with open(scaler_dir, 'r') as f:
     scaler = pickle.load(f)
 
 # Título com emoji
