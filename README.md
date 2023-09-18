@@ -1,7 +1,15 @@
 novexus_churn
 ==============================
 
-novexus_churn
+Projeto Challenge Dados da Alura.
+- Extração de dados
+- Análise Exploratória
+- Pré-processamento dos dados
+- Balanceamento dos dados
+- Modelos de machine learning
+- Escolhendo o melhor modelo estatisticamente
+- Otimização do melhor modelo com hiper parametros
+- Deploy do modelo - Streamlit 
 
 Project Organization
 ------------
