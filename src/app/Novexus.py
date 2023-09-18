@@ -10,7 +10,7 @@ import os
 image_path = os.path.abspath("data/interim/images/Logo (5).png")
 
 # Exibir a imagem
-st.image(image_path)
+st.image('../../data/interim/images/Logo (5).png')
 
 # image_head = "data/interim/images/Logo (5).png"
 st.image("data/interim/images/Logo (5).png")
