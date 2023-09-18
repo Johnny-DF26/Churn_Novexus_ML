@@ -5,7 +5,7 @@ import requests
 import pickle
 
 # image_head = "data/interim/images/Logo (5).png"
-# st.image(image_head)  
+st.image("data/interim/images/Logo (5).png")
 model_dir = 'models/model_random_forest_novexus_churn.pkl'
 scaler_dir = 'models/scaler_random_forest_novexus_churn.pkl'
 
