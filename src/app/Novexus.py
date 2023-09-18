@@ -16,7 +16,7 @@ with open(scaler_dir, 'rb') as f:
     scaler = pickle.load(f)
 
 # Configurando o layout para centralizar conteúdo
-st.title("""
+st.write("""
     <div style="display: flex; justify-content: center;">
         <h1>📞Previsão de Churn📞</h1>
     </div>
