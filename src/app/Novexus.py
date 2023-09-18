@@ -7,7 +7,7 @@ import os
 
 
 # Caminho absoluto para a imagem
-image_path = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/data/interim/images/Logo (5).png"
+image_path = "C:/Users/johnn/OneDrive/Documentos/GitHub/Churn_Novexus_ML/data/interim/images/Logo (3).png"
 
 # Exibir a imagem
 st.image(image=image_path, format='PNG')
