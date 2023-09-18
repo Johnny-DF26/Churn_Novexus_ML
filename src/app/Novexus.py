@@ -10,10 +10,10 @@ import os
 image_path = os.path.abspath("data/interim/images/Logo (5).png")
 
 # Exibir a imagem
-st.image('data/interim/images/Logo (5).png')
+st.image(image_path)
 
 # image_head = "data/interim/images/Logo (5).png"
-st.image("data/interim/images/Logo (5).png")
+# st.image("data/interim/images/Logo (5).png")
 model_dir = 'models/model_random_forest_novexus_churn.pkl'
 scaler_dir = 'models/scaler_random_forest_novexus_churn.pkl'
 
